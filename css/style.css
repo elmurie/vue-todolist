@@ -30,12 +30,22 @@ main {
     margin-top : 80px;
 }
 .todos-container{
-    background-color: #eee;
+    background-color: hsl(0, 0%, 93%);
     padding: 15px;
 }
 
 .todos-list {
     list-style: none;
+}
+
+.todos-list li {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid hsl(0, 2%, 72%);
+}
+
+.todos-list li i {
+    margin-left: auto;
 }
 
 
