@@ -35,9 +35,12 @@
             <main>
                 <div class="todos-container">
                     <ul v-if="tasks.length > 0" class="todos-list">
-                        <li v-for="(task, index) in tasks" :key="index">{{tasks[index].taskName}} <i class="fas fa-times" @click="removeTask(index)"></i> </li>
+                        <li v-for="(task, index) in tasks" :key="index" >
+                            <div class="taskName" :class="checkStatus(tasks[index])">{{tasks[index].taskName}}</div>
+                            <i class="fas fa-times" @click="removeTask(index)"></i>
+                        </li>
                     </ul>
-                    <h2 v-else>It looks like your To Do list is empty!</h2>
+                    <h2 v-else class="empty-list">Good job! Your To Do list is empty</h2>
                     
                 </div>
             </main>

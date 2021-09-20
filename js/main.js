@@ -21,7 +21,8 @@ const app = new Vue( {
         newTask : {
             taskName : '',
             isDone : false
-        },
+        }
+
     },
     methods : {
 
@@ -35,8 +36,14 @@ const app = new Vue( {
 
         removeTask : function(taskIndex) {
             this.tasks.splice(taskIndex, 1);
-        }
+        },
         
-
-    }
+        checkStatus : function(element) {
+            if ( element.isDone == true ) {
+                return "done";
+            } else {
+                return "notDone";
+            }
+        }
+    },
 });

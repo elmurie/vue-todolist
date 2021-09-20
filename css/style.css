@@ -9,6 +9,7 @@
 .container {
     max-width: 1200px;
     margin: auto;
+    font-family: 'Lato', sans-serif;
 }
 
 /*  Header */
@@ -47,6 +48,19 @@ main {
 .todos-list li i {
     margin-left: auto;
 }
+.todos-list li i:hover {
+    cursor: pointer;
+}
 
+.empty-list {
+    text-align: center;
+}
 
+.done {
+    color: #14662dd7;
+    text-decoration: line-through;
+}
 
+.notDone {
+    color: red;
+}
