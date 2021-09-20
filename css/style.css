@@ -90,11 +90,28 @@ main {
     margin-right: 1em;
 }
 
+.todos-list i {
+    transition: .2s;
+}
+
 
 .todos-list li i:hover {
     cursor: pointer;
     opacity: .8;
 }
+
+.todos-list li i:active {
+    transform: scale(1.5);
+}
+
+.fa-check-square:hover {
+    color: #00E165;
+}
+
+.fa-times:hover {
+    color: #e13400;
+}
+
 
 .empty-list {
     text-align: center;
