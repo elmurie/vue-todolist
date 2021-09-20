@@ -24,12 +24,17 @@ const app = new Vue( {
         },
     },
     methods : {
+
         addTask : function() {
             if ( this.newTask.taskName != "") {
                 let newObj = { taskName : this.newTask.taskName, isDone : false};
                 this.tasks.push(newObj);
                 this.newTask.taskName = '';
             }
+        },
+
+        removeTask : function(taskIndex) {
+            this.tasks.splice(taskIndex, 1);
         }
         
 

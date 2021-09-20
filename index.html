@@ -35,7 +35,7 @@
             <main>
                 <div class="todos-container">
                     <ul class="todos-list">
-                        <li v-for="(task, index) in tasks" :key="index">{{tasks[index].taskName}} <i class="fas fa-times"></i> </li>
+                        <li v-for="(task, index) in tasks" :key="index">{{tasks[index].taskName}} <i class="fas fa-times" @click="removeTask(index)"></i> </li>
                     </ul>
                     
                 </div>
