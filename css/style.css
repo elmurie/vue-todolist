@@ -10,15 +10,18 @@
     max-width: 1200px;
     margin: auto;
     font-family: 'Lato', sans-serif;
+    color : #001533;
 }
 
 /*  Header */
 header {
+    padding-top: 20px;
     text-align: center;
 }
 
+
 .logo {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -26,13 +29,45 @@ header {
     width: 100%;
 }
 
+.search {
+    margin-top: 20px;
+}
+
+input {
+    width: 280px;
+    height: 30px;
+    padding: 20px 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: inset 0px 0px 3px 1px #001533;
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 25px;
+    background-color: #00E165;
+    color:  #001533;
+    font-weight: 800;
+    transition: .4s;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 3px 1px #000000;
+}
 /* Main */
 main {
-    margin-top : 80px;
+    margin-top : 60px;
 }
 .todos-container{
-    background-color: hsl(0, 0%, 93%);
+    background-color: #F5F7F7;
     padding: 15px;
+    border-radius: 25px;
 }
 
 .todos-list {
@@ -44,6 +79,11 @@ main {
     justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid hsl(0, 2%, 72%);
+    font-weight: 600;
+}
+
+.todos-list li:hover {
+    background-color: #fff;
 }
 
 .fas.fa-check-square {
@@ -53,6 +93,7 @@ main {
 
 .todos-list li i:hover {
     cursor: pointer;
+    opacity: .8;
 }
 
 .empty-list {
@@ -60,11 +101,11 @@ main {
 }
 
 .done {
-    color: #14662dd7;
+    color: #00E165;
 }
 
 .notDone {
-    color: red;
+    color: #e13400;
 }
 
 .line-through {
