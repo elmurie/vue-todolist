@@ -26,7 +26,7 @@
             <header>
                 <div class="logo"><img src="/img/logo.png" alt="Logo"></div>
                 <div class="search">
-                    <input v-model="newTask.taskName" type="text" placeholder="New Task">
+                    <input v-model="newTask.taskName" type="text" placeholder="New Task" @keyup.enter="addTask">
                     <button @click="addTask">Add</button>
                 </div>
             </header>
@@ -34,9 +34,10 @@
             <!-- corpo -->
             <main>
                 <div class="todos-container">
-                    <ul class="todos-list">
+                    <ul v-if="tasks.length > 0" class="todos-list">
                         <li v-for="(task, index) in tasks" :key="index">{{tasks[index].taskName}} <i class="fas fa-times" @click="removeTask(index)"></i> </li>
                     </ul>
+                    <h2 v-else>It looks like your To Do list is empty!</h2>
                     
                 </div>
             </main>

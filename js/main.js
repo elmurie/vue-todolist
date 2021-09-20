@@ -14,7 +14,7 @@ const app = new Vue( {
             },
 
             {
-                taskName : "Call bank",
+                taskName : "Call the bank",
                 isDone : false
             }
         ],
