@@ -41,13 +41,16 @@ main {
 
 .todos-list li {
     display: flex;
+    justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid hsl(0, 2%, 72%);
 }
 
-.todos-list li i {
-    margin-left: auto;
+.fas.fa-check-square {
+    margin-right: 1em;
 }
+
+
 .todos-list li i:hover {
     cursor: pointer;
 }
@@ -58,9 +61,12 @@ main {
 
 .done {
     color: #14662dd7;
-    text-decoration: line-through;
 }
 
 .notDone {
     color: red;
+}
+
+.line-through {
+    text-decoration: line-through;
 }
