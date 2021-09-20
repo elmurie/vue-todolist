@@ -49,7 +49,9 @@ const app = new Vue( {
         changeStatus : function(element) {
             if ( element.isDone == false ) {
                 element.isDone = true;
-            } 
+            } else {
+                element.isDone = false;
+            }
         }
     },
 });
