@@ -18,9 +18,19 @@ const app = new Vue( {
                 isDone : false
             }
         ],
-        newTodo : '',
+        newTask : {
+            taskName : '',
+            isDone : false
+        },
     },
     methods : {
+        addTask : function() {
+            if ( this.newTask.taskName != "") {
+                let newObj = { taskName : this.newTask.taskName, isDone : false};
+                this.tasks.push(newObj);
+                this.newTask.taskName = '';
+            }
+        }
         
 
     }
