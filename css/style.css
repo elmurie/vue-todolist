@@ -42,6 +42,9 @@ input {
     border: none;
     outline: none;
     box-shadow: inset 0px 0px 3px 1px #001533;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
 button {
