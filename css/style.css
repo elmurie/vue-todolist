@@ -1,0 +1,42 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*  Header */
+header {
+    text-align: center;
+}
+
+.logo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* Main */
+main {
+    margin-top : 80px;
+}
+.todos-container{
+    background-color: #eee;
+    padding: 15px;
+}
+
+.todos-list {
+    list-style: none;
+}
+
+
+
